@@ -7,29 +7,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
+    body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+    }
+    .section-title {
+        @apply text-2xl font-semibold text-sky-700 mb-6 pb-2 border-b-2 border-sky-200;
+    }
+    .nav-link {
+        @apply px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
+    }
+    .nav-link-mobile {
+        @apply block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
+    }
+    .skill-category-title {
+        @apply text-lg font-semibold text-stone-700 mb-2;
+    }
+    .skill-item {
+        @apply bg-sky-100 text-sky-800 text-xs font-medium mr-1 mb-2 px-2.5 py-0.5 rounded-full;
+    }
+    .project-card {
+        @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+    }
+    /* Improved Skills Grid Layout */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        gap: 1rem;
+    }
+    @media (min-width: 768px) {
+        .skills-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
         }
-        .section-title {
-            @apply text-2xl font-semibold text-sky-700 mb-6 pb-2 border-b-2 border-sky-200;
+    }
+    @media (min-width: 1024px) {
+        .skills-grid {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
         }
-        .nav-link {
-            @apply px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
-        }
-        .nav-link-mobile {
-            @apply block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
-        }
-        .skill-category-title {
-            @apply text-lg font-semibold text-stone-700 mb-2;
-        }
-        .skill-item {
-            @apply bg-sky-100 text-sky-800 text-xs font-medium mr-2 mb-2 px-2.5 py-0.5 rounded-full;
-        }
-        .project-card {
-            @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
-        }
-    </style>
+    }
+</style>
 </head>
 <body class="bg-stone-50 text-stone-800">
 
@@ -98,43 +114,43 @@
         </section>
 
         <section id="skills" class="mb-16 scroll-mt-20">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <p class="mb-4 text-stone-600">This section outlines the diverse range of technical skills I have acquired and applied throughout my career, covering programming, database management, system administration, and data analysis.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div>
-                        <h3 class="skill-category-title">Programming Languages</h3>
-                        <div class="flex flex-wrap">
-                            <span class="skill-item">SQL</span><span class="skill-item">Python</span><span class="skill-item">R</span><span class="skill-item">Java</span><span class="skill-item">C</span><span class="skill-item">HTML</span><span class="skill-item">CSS</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="skill-category-title">Databases & Tools</h3>
-                        <div class="flex flex-wrap">
-                            <span class="skill-item">Azure SQL</span><span class="skill-item">MySQL</span><span class="skill-item">Microsoft SQL Server</span><span class="skill-item">Azure Blob Storage</span><span class="skill-item">Database Administration</span><span class="skill-item">Power BI</span><span class="skill-item">Tableau</span><span class="skill-item">Microsoft Excel</span><span class="skill-item">Microsoft Access</span><span class="skill-item">Jupyter Notebook</span><span class="skill-item">Visual Studio</span><span class="skill-item">Microsoft Project</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="skill-category-title">Systems & Platforms</h3>
-                        <div class="flex flex-wrap">
-                            <span class="skill-item">Windows Server</span><span class="skill-item">Active Directory</span><span class="skill-item">PowerShell</span><span class="skill-item">Network Protocols</span><span class="skill-item">Cloud Computing</span><span class="skill-item">Office 365</span><span class="skill-item">Microsoft Azure</span><span class="skill-item">SSIS (familiarity)</span><span class="skill-item">Azure Data Factory (ADF)</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="skill-category-title">Data Analysis & Management</h3>
-                        <div class="flex flex-wrap">
-                            <span class="skill-item">Data Governance</span><span class="skill-item">Data Preprocessing</span><span class="skill-item">Data Management</span><span class="skill-item">Data Visualization</span><span class="skill-item">Machine Learning (Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn)</span><span class="skill-item">ETL Operations</span><span class="skill-item">Data Extraction</span><span class="skill-item">Reporting</span><span class="skill-item">Data Manipulation</span>
-                        </div>
-                    </div>
-                    <div class="md:col-span-2 lg:col-span-1">
-                        <h3 class="skill-category-title">Other Tools & Methodologies</h3>
-                        <div class="flex flex-wrap">
-                            <span class="skill-item">MS Word</span><span class="skill-item">MS Visio</span><span class="skill-item">MS Project</span><span class="skill-item">Technical Documentation</span><span class="skill-item">User Training Materials</span><span class="skill-item">HIPAA Compliance</span><span class="skill-item">Data Governance Policies</span><span class="skill-item">Secure Data Handling Practices</span><span class="skill-item">Agile</span><span class="skill-item">Waterfall</span><span class="skill-item">Active Directory Basics</span><span class="skill-item">SAS (conceptual)</span><span class="skill-item">Data Cleaning</span>
-                        </div>
-                    </div>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <p class="mb-4 text-stone-600">This section outlines the diverse range of technical skills I have acquired and applied throughout my career, covering programming, database management, system administration, and data analysis.</p>
+        <div class="skills-grid">
+            <div>
+                <h3 class="skill-category-title">Programming Languages</h3>
+                <div class="flex flex-wrap">
+                    <span class="skill-item">SQL</span><span class="skill-item">Python</span><span class="skill-item">R</span><span class="skill-item">Java</span><span class="skill-item">C</span><span class="skill-item">HTML</span><span class="skill-item">CSS</span>
                 </div>
             </div>
-        </section>
+            <div>
+                <h3 class="skill-category-title">Databases & Tools</h3>
+                <div class="flex flex-wrap">
+                    <span class="skill-item">Azure SQL</span><span class="skill-item">MySQL</span><span class="skill-item">Microsoft SQL Server</span><span class="skill-item">Azure Blob Storage</span><span class="skill-item">Database Administration</span><span class="skill-item">Power BI</span><span class="skill-item">Tableau</span><span class="skill-item">Microsoft Excel</span><span class="skill-item">Microsoft Access</span><span class="skill-item">Jupyter Notebook</span><span class="skill-item">Visual Studio</span><span class="skill-item">Microsoft Project</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="skill-category-title">Systems & Platforms</h3>
+                <div class="flex flex-wrap">
+                    <span class="skill-item">Windows Server</span><span class="skill-item">Active Directory</span><span class="skill-item">PowerShell</span><span class="skill-item">Network Protocols</span><span class="skill-item">Cloud Computing</span><span class="skill-item">Office 365</span><span class="skill-item">Microsoft Azure</span><span class="skill-item">SSIS (familiarity)</span><span class="skill-item">Azure Data Factory (ADF)</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="skill-category-title">Data Analysis & Management</h3>
+                <div class="flex flex-wrap">
+                    <span class="skill-item">Data Governance</span><span class="skill-item">Data Preprocessing</span><span class="skill-item">Data Management</span><span class="skill-item">Data Visualization</span><span class="skill-item">Machine Learning (Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn)</span><span class="skill-item">ETL Operations</span><span class="skill-item">Data Extraction</span><span class="skill-item">Reporting</span><span class="skill-item">Data Manipulation</span>
+                </div>
+            </div>
+            <div class="md:col-span-2 lg:col-span-1">
+                <h3 class="skill-category-title">Other Tools & Methodologies</h3>
+                <div class="flex flex-wrap">
+                    <span class="skill-item">MS Word</span><span class="skill-item">MS Visio</span><span class="skill-item">MS Project</span><span class="skill-item">Technical Documentation</span><span class="skill-item">User Training Materials</span><span class="skill-item">HIPAA Compliance</span><span class="skill-item">Data Governance Policies</span><span class="skill-item">Secure Data Handling Practices</span><span class="skill-item">Agile</span><span class="skill-item">Waterfall</span><span class="skill-item">Active Directory Basics</span><span class="skill-item">SAS (conceptual)</span><span class="skill-item">Data Cleaning</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="experience" class="mb-16 scroll-mt-20">
             <h2 class="section-title">Professional Experience</h2>
