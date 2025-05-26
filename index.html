@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Ahmed - Information Technology Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            @apply text-2xl font-semibold text-sky-700 mb-6 pb-2 border-b-2 border-sky-200;
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
+        }
+        .nav-link-mobile {
+            @apply block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:bg-sky-100 hover:text-sky-700 transition-colors;
+        }
+        .skill-category-title {
+            @apply text-lg font-semibold text-stone-700 mb-2;
+        }
+        .skill-item {
+            @apply bg-sky-100 text-sky-800 text-xs font-medium mr-2 mb-2 px-2.5 py-0.5 rounded-full;
+        }
+        .project-card {
+            @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold text-sky-700">Sameer Ahmed</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#summary" class="nav-link">Summary</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-stone-400 hover:text-sky-700 hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#summary" class="nav-link-mobile">Summary</a>
+                <a href="#skills" class="nav-link-mobile">Skills</a>
+                <a href="#experience" class="nav-link-mobile">Experience</a>
+                <a href="#education" class="nav-link-mobile">Education</a>
+                <a href="#certifications" class="nav-link-mobile">Certifications</a>
+                <a href="#projects" class="nav-link-mobile">Projects</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-sky-600 text-white py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-bold mb-4">Sameer Ahmed</h1>
+            <p class="text-2xl mb-6 text-sky-100">Information Technology Analyst</p>
+            <p class="text-lg max-w-2xl mx-auto text-sky-200">
+                Detail-oriented professional with a Master's in Computer Science and extensive experience in system support, data management, and user training.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <section id="summary" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-stone-700 leading-relaxed">
+                    Detail-oriented Information Technology Analyst with a Master's in Computer Science and over 3 years of experience in system support, data management, and user training. Proficient in SQL, Power BI, Azure SQL, and network protocols, adept at diagnosing system inefficiencies, optimizing data workflows, and delivering actionable insights. Proven ability to coordinate with management and support staff, participate in technical projects, and provide comprehensive end-user support for city computer systems and applications, ensuring secure and accessible reporting.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-4 text-stone-600">This section outlines the diverse range of technical skills I have acquired and applied throughout my career, covering programming, database management, system administration, and data analysis.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                        <div class="flex flex-wrap">
+                            <span class="skill-item">SQL</span><span class="skill-item">Python</span><span class="skill-item">R</span><span class="skill-item">Java</span><span class="skill-item">C</span><span class="skill-item">HTML</span><span class="skill-item">CSS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="skill-category-title">Databases & Tools</h3>
+                        <div class="flex flex-wrap">
+                            <span class="skill-item">Azure SQL</span><span class="skill-item">MySQL</span><span class="skill-item">Microsoft SQL Server</span><span class="skill-item">Azure Blob Storage</span><span class="skill-item">Database Administration</span><span class="skill-item">Power BI</span><span class="skill-item">Tableau</span><span class="skill-item">Microsoft Excel</span><span class="skill-item">Microsoft Access</span><span class="skill-item">Jupyter Notebook</span><span class="skill-item">Visual Studio</span><span class="skill-item">Microsoft Project</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="skill-category-title">Systems & Platforms</h3>
+                        <div class="flex flex-wrap">
+                            <span class="skill-item">Windows Server</span><span class="skill-item">Active Directory</span><span class="skill-item">PowerShell</span><span class="skill-item">Network Protocols</span><span class="skill-item">Cloud Computing</span><span class="skill-item">Office 365</span><span class="skill-item">Microsoft Azure</span><span class="skill-item">SSIS (familiarity)</span><span class="skill-item">Azure Data Factory (ADF)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="skill-category-title">Data Analysis & Management</h3>
+                        <div class="flex flex-wrap">
+                            <span class="skill-item">Data Governance</span><span class="skill-item">Data Preprocessing</span><span class="skill-item">Data Management</span><span class="skill-item">Data Visualization</span><span class="skill-item">Machine Learning (Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn)</span><span class="skill-item">ETL Operations</span><span class="skill-item">Data Extraction</span><span class="skill-item">Reporting</span><span class="skill-item">Data Manipulation</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <h3 class="skill-category-title">Other Tools & Methodologies</h3>
+                        <div class="flex flex-wrap">
+                            <span class="skill-item">MS Word</span><span class="skill-item">MS Visio</span><span class="skill-item">MS Project</span><span class="skill-item">Technical Documentation</span><span class="skill-item">User Training Materials</span><span class="skill-item">HIPAA Compliance</span><span class="skill-item">Data Governance Policies</span><span class="skill-item">Secure Data Handling Practices</span><span class="skill-item">Agile</span><span class="skill-item">Waterfall</span><span class="skill-item">Active Directory Basics</span><span class="skill-item">SAS (conceptual)</span><span class="skill-item">Data Cleaning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-6 text-stone-600">This section details my professional journey, highlighting key responsibilities and accomplishments in my role as a Data Analyst, where I applied my technical and analytical skills to support critical IT systems and data-driven decision-making.</p>
+                <div>
+                    <h3 class="text-xl font-semibold text-stone-800">Data Analyst</h3>
+                    <p class="text-md text-stone-600 mb-1">ILLINOIS DEPARTMENT OF HUMAN SERVICES - ILPMP | Springfield, IL</p>
+                    <p class="text-sm text-stone-500 mb-3">February 2023 - February 2025</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700 leading-relaxed">
+                        <li>Supported and maintained critical IT systems by leading data analysis and tracking initiatives for opioid usage across city, county, and state levels, presenting findings on the ILPMP website for transparency and decision-making.</li>
+                        <li>Analyzed raw data from multiple sources, transforming it into actionable insights and visualizing key performance indicators (KPIs) through Power BI dashboards, aiding in data-driven policy decisions and improving real-time reporting efficiency by 30%.</li>
+                        <li>Managed and maintained licensing information for healthcare professionals and pharmacies, ensuring accurate and up-to-date records for compliance and reporting within a secure data environment.</li>
+                        <li>Collaborated with cross-functional stakeholders, including healthcare providers and government agencies, to define business requirements and develop data solutions, facilitating communication between technical and non-technical users.</li>
+                        <li>Provided comprehensive end-user support and training to new employees and colleagues on SQL, Python, and Power BI, significantly improving team efficiency and system usage.</li>
+                        <li>Optimized SQL-based data retrieval processes, reducing data extraction time and enhancing report generation by 30%, directly supporting dynamic reporting needs.</li>
+                        <li>Participated in technical projects, including managing IT project implementation using Agile and Waterfall methodologies, which improved processing efficiency by 25%.</li>
+                        <li>Ensured data quality and integrity, maintaining strict compliance with HIPAA regulations and providing secure, reliable data for various public health initiatives.</li>
+                        <li>Authored detailed technical documentation, user manuals, and process diagrams, reducing onboarding and troubleshooting time by 35%.</li>
+                        <li>Assisted in web development using HTML and CSS with Visual Studio, enhancing user interfaces and improving site functionality.</li>
+                        <li>Monitored database performance, diagnosed inefficiencies, and collaborated with IT teams to improve system workflows, ensuring secure, accurate, and accessible reporting systems.</li>
+                        <li>Provided support for user account creation and assisted in user-account authorizations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Education</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-6 text-stone-600">My academic background has provided a strong foundation in computer science and engineering, equipping me with the theoretical knowledge and practical skills essential for my career in technology.</p>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-stone-800">Master's in Computer Science</h3>
+                        <p class="text-md text-stone-600">University Of Illinois Springfield | Springfield, IL</p>
+                        <p class="text-sm text-stone-500">August 2022 - May 2024 | GPA: 3.96/4</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-stone-800">Bachelor of Technology in Computer Science and Engineering</h3>
+                        <p class="text-md text-stone-600">Jawaharlal Nehru Technological University | Hyderabad, India</p>
+                        <p class="text-sm text-stone-500">June 2016 - October 2020 | GPA: 3.59/4</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Certifications</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                 <p class="mb-6 text-stone-600">To further enhance my expertise and stay current with industry standards, I have pursued several certifications in data analysis, cloud technologies, and machine learning.</p>
+                <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700">
+                    <li>Microsoft PowerBI Data Analyst (In progress)</li>
+                    <li>Azure Data Fundamentals</li>
+                    <li>Microsoft PowerBI - Udemy</li>
+                    <li>Databricks for Data Engineering</li>
+                    <li>Databricks Machine Learning</li>
+                    <li>Machine Learning Certification - NPTEL</li>
+                    <li>Problem Solving with Java - Coursera (Duke University)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Projects</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-6 text-stone-600">These projects demonstrate my ability to apply data analysis, visualization, and machine learning techniques to solve real-world problems and derive meaningful insights. They showcase hands-on experience with various tools and methodologies.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="project-card">
+                        <h3 class="text-xl font-semibold text-stone-800 mb-2">Power BI Dashboard: Energy Consumption Analysis</h3>
+                        <p class="text-sm text-sky-600 mb-3 hover:underline"><a href="https://github.com" target="_blank" rel="noopener noreferrer">View on GitHub (Placeholder)</a></p>
+                        <ul class="list-disc list-outside ml-5 space-y-1 text-sm text-stone-600 leading-relaxed">
+                            <li><strong>Dashboard Development:</strong> Built an interactive Power BI dashboard to analyze energy consumption trends, focusing on hourly, daily, and seasonal variations.</li>
+                            <li><strong>Data Analysis & Insights:</strong> Analyzed peak consumption periods (6 PM - 8 PM) and seasonal trends, providing insights for energy optimization and cost-saving strategies.</li>
+                            <li><strong>Visualization:</strong> Developed dynamic visualizations with interactive filters to support data-driven decision-making for utility providers.</li>
+                            <li><strong>Business Impact:</strong> Provided actionable insights to improve load management and optimize energy supply strategies, contributing to operational efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="text-xl font-semibold text-stone-800 mb-2">Fetch Rewards Analysis</h3>
+                         <p class="text-sm text-sky-600 mb-3 hover:underline"><a href="https://github.com" target="_blank" rel="noopener noreferrer">View on GitHub (Placeholder)</a></p>
+                        <ul class="list-disc list-outside ml-5 space-y-1 text-sm text-stone-600 leading-relaxed">
+                            <li><strong>Data Cleaning & Validation:</strong> Cleaned and preprocessed Users, Products, and Transactions datasets using Python (Pandas), resolving duplicates and missing values.</li>
+                            <li><strong>Exploratory Data Analysis (EDA):</strong> Conducted EDA to uncover trends in sales, user demographics, and product categories, providing actionable insights for targeted marketing.</li>
+                            <li><strong>SQL Querying:</strong> Developed optimized SQL queries to analyze sales by generation and year-over-year growth, supporting key business decisions.</li>
+                            <li><strong>Data Visualization:</strong> Created visualizations using Matplotlib and Seaborn, delivering insights into sales trends and store performance for stakeholders.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-mt-20">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <p class="text-lg text-stone-700 mb-6">I'm always open to discussing new opportunities and challenges. Feel free to reach out!</p>
+                <div class="space-y-4">
+                    <p class="text-stone-800"><span class="font-semibold">Email:</span> <a href="mailto:i.mohammadsameer142@gmail.com" class="text-sky-600 hover:underline">i.mohammadsameer142@gmail.com</a></p>
+                    <p class="text-stone-800"><span class="font-semibold">Phone:</span> <a href="tel:+17742449419" class="text-sky-600 hover:underline">774-244-9419</a></p>
+                    <p class="text-stone-800"><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/sameerahmed24" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">linkedin.com/in/sameerahmed24</a></p>
+                    <p class="text-stone-800"><span class="font-semibold">Location:</span> Springfield, IL-62704</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-stone-800 text-stone-300 py-8 text-center mt-16">
+        <p>&copy; <span id="currentYear"></span> Sameer Ahmed. All rights reserved.</p>
+        <p class="text-sm">Designed to be an interactive resume experience.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('.nav-link-mobile');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !expanded);
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.querySelectorAll('svg').forEach(icon => icon.classList.toggle('hidden'));
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.querySelectorAll('svg').forEach(icon => {
+                    if (icon.classList.contains('block')) { // Show hamburger
+                        icon.classList.remove('hidden');
+                    } else { // Hide X
+                        icon.classList.add('hidden');
+                    }
+                });
+                 mobileMenuButton.querySelector('svg:first-child').classList.remove('hidden'); // Ensure hamburger is visible
+                 mobileMenuButton.querySelector('svg:last-child').classList.add('hidden'); // Ensure X is hidden
+            });
+        });
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll for anchor links - already handled by CSS scroll-behavior: smooth and scroll-mt-20 for offset
+        // However, if more complex logic or different offsets per section were needed, JS would be used here.
+    </script>
+</body>
+</html>
