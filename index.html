@@ -35,7 +35,8 @@
 
         /* Styling for skill category titles in the new format */
         .skill-category-title {
-            @apply text-lg font-semibold text-stone-700; /* Removed mb-2 as it's inline now */
+            @apply text-lg font-semibold text-stone-700;
+            /* Removed mb-2 as it's inline now */
         }
 
         /* Removed .skill-item styling as it's no longer used for comma-separated list */
@@ -50,7 +51,8 @@
 
         /* Responsive grid layout for skills section - changed to block display */
         .skills-grid {
-            display: block; /* Changed from grid to block for the new layout */
+            display: block;
+            /* Changed from grid to block for the new layout */
             /* Removed grid-template-columns and gap as it's no longer a grid */
         }
 
@@ -77,6 +79,7 @@
                         <a href="#experience" class="nav-link">Experience</a>
                         <a href="#education" class="nav-link">Education</a>
                         <a href="#certifications" class="nav-link">Certifications</a>
+                        <a href="#volunteer" class="nav-link">Volunteer</a>
                         <a href="#projects" class="nav-link">Projects</a>
                         <a href="#contact" class="nav-link">Contact</a>
                     </div>
@@ -106,6 +109,7 @@
                 <a href="#experience" class="nav-link-mobile">Experience</a>
                 <a href="#education" class="nav-link-mobile">Education</a>
                 <a href="#certifications" class="nav-link-mobile">Certifications</a>
+                <a href="#volunteer" class="nav-link-mobile">Volunteer</a>
                 <a href="#projects" class="nav-link-mobile">Projects</a>
                 <a href="#contact" class="nav-link-mobile">Contact</a>
             </div>
@@ -125,7 +129,8 @@
                 <span>|</span>
                 <span>7742449419</span>
                 <span>|</span>
-                <a href="mailto:i.mohammadsameer142@gmail.com" class="text-sky-200 hover:underline">i.mohammadsameer142@gmail.com</a>
+                <a href="mailto:i.mohammadsameer142@gmail.com"
+                    class="text-sky-200 hover:underline">i.mohammadsameer142@gmail.com</a>
                 <span>|</span>
                 <a href="https://www.linkedin.com/in/sameerahmed24" target="_blank" rel="noopener noreferrer"
                     class="text-sky-200 hover:underline">linkedin.com/in/sameerahmed24</a>
@@ -168,14 +173,27 @@
         <section id="experience" class="mb-16 scroll-mt-20">
             <h2 class="section-title">Professional Experience</h2>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <p class="mb-6 text-stone-600">This section details my professional journey, highlighting key
-                    responsibilities and accomplishments in my role as a Data Analyst, where I applied my technical and
-                    analytical skills to support critical IT systems and data-driven decision-making.</p>
+                <p class="mb-6 text-stone-600">
+                    This section details my professional journey, highlighting key
+                    responsibilities and accomplishments in data analysis and related roles.
+                </p>
                 <div>
+                    <h3 class="text-xl font-semibold text-stone-800">Data Analyst Consultant</h3>
+                    <p class="text-md text-stone-600 mb-1">Independent Consultant</p>
+                    <p class="text-sm text-stone-500 mb-3">August 2024 - Present | Remote/Springfield, IL</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700 leading-relaxed">
+                        <li>Designed, developed, and maintained Azure platform's data pipelines and ETL processes, improving data workflow efficiency by an estimated 15%.</li>
+                        <li>Wrote complex SQL queries to analyze data and generate comprehensive reports for diverse business needs, enhancing reporting accuracy by 10%.</li>
+                        <li>Utilized Python for advanced data analysis and automating data workflows, leading to a 20% reduction in manual processing time.</li>
+                        <li>Created interactive Power BI dashboards to visualize key metrics and support data-driven decision-making, enhancing data accessibility for stakeholders.</li>
+                        <li>Collaborated with cross-functional teams to identify business requirements and delivered actionable data insights and solutions.</li>
+                        <li>Performed data integration tasks, ensuring high data quality and strict adherence to company standards and best practices.</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
                     <h3 class="text-xl font-semibold text-stone-800">Data Analyst</h3>
-                    <p class="text-md text-stone-600 mb-1">ILLINOIS DEPARTMENT OF HUMAN SERVICES - ILPMP | Springfield, IL
-                    </p>
-                    <p class="text-sm text-stone-500 mb-3">February 2023 - February 2025</p>
+                    <p class="text-md text-stone-600 mb-1">ILLINOIS DEPARTMENT OF HUMAN SERVICES - ILPMP | Springfield, IL</p>
+                    <p class="text-sm text-stone-500 mb-3">February 2023 - August 2024</p>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700 leading-relaxed">
                         <li>Supported and maintained critical IT systems by leading data analysis and tracking initiatives for
                             opioid usage across city, county, and state levels, presenting findings on the ILPMP website for
@@ -208,7 +226,7 @@
             </div>
         </section>
 
-        <section id="education" class="mb-16 scroll-mt-20">
+<section id="education" class="mb-16 scroll-mt-20">
             <h2 class="section-title">Education</h2>
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <p class="mb-6 text-stone-600">My academic background has provided a strong foundation in computer
@@ -219,12 +237,18 @@
                         <h3 class="text-xl font-semibold text-stone-800">Master's in Computer Science</h3>
                         <p class="text-md text-stone-600">University Of Illinois Springfield | Springfield, IL</p>
                         <p class="text-sm text-stone-500">August 2022 - May 2024 | GPA: 3.96/4</p>
+                        <p class="text-sm text-stone-700 mt-2">
+                            <strong>Relevant Coursework:</strong> Machine Learning, Cloud Application Development, Object-Oriented Programming, Data Visualization, Intro to Database, Advanced Databases, Computer Ethics for Profession, Computer Networking, Security Testing, and Research Study.
+                        </p>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold text-stone-800">Bachelor of Technology in Computer Science and
                             Engineering</h3>
                         <p class="text-md text-stone-600">Jawaharlal Nehru Technological University | Hyderabad, India</p>
                         <p class="text-sm text-stone-500">June 2016 - October 2020 | GPA: 3.59/4</p>
+                         <p class="text-sm text-stone-700 mt-2">
+                            <strong>Relevant Coursework:</strong> Big Data Technologies-Hadoop, Distributed Computing, Parallel Processing, Predictive Analytics, Python, Machine Learning, Data Structures and Algorithms, RDBMS, Software Engineering Principles, MySQL, Oracle DB, Project Management, AWS Cloud Development, Data Visualization, Research Study.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -247,6 +271,36 @@
             </div>
         </section>
 
+        <section id="volunteer" class="mb-16 scroll-mt-20">
+            <h2 class="section-title">Volunteer Experience</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-6 text-stone-600">
+                    In addition to my technical skills, I have actively engaged in volunteer work, demonstrating my commitment to community service and developing valuable soft skills.
+                </p>
+                <div>
+                    <h3 class="text-xl font-semibold text-stone-800">Volunteer, ISOGS - Muslim Community Center</h3>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700 leading-relaxed">
+                        <li>Organized and distributed clothing, food, and necessities to underprivileged individuals.</li>
+                        <li>Collaborated with community members to address the needs of homeless individuals.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-xl font-semibold text-stone-800">Member, Muslim Student Association (MSA), UIS</h3>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700 leading-relaxed">
+                        <li>Participated in charity drives and fundraising events for local and international humanitarian efforts.</li>
+                        <li>Developed organizational and teamwork skills through community service and student support initiatives.</li>
+                    </ul>
+                </div>
+                 <div class="mt-4">
+                    <h3 class="text-xl font-semibold text-stone-800">Member, Indian Student Organization (ISO), UIS</h3>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-stone-700 leading-relaxed">
+                        <li>Assisted in organizing cultural events and community service projects for students and the broader community.</li>
+                        <li>Contributed to resource and support initiatives, enhancing the university experience for students, and demonstrating project management skills.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="mb-16 scroll-mt-20">
             <h2 class="section-title">Projects</h2>
             <div class="bg-white p-6 rounded-lg shadow-lg">
@@ -262,13 +316,13 @@
                                 rel="noopener noreferrer">View on GitHub</a></p>
                         <ul class="list-disc list-outside ml-5 space-y-1 text-sm text-stone-600 leading-relaxed">
                             <li><strong>Dashboard Development:</strong> Built an interactive Power BI dashboard to analyze energy
-                                consumption trends, focusing on hourly, daily, and seasonal variations.</li>
-                            <li><strong>Data Analysis & Insights:</strong> Analyzed peak consumption periods (6 PM - 8 PM) and seasonal
-                                trends, providing insights for energy optimization and cost-saving strategies.</li>
+                                consumption trends, focusing on hourly, daily, and seasonal variations. [cite: 20]</li>
+                            <li><strong>Data Analysis & Insights:</strong> Analyzed peak consumption periods (6 PM 8 PM) and seasonal
+                                trends, providing insights for energy optimization and cost-saving strategies. [cite: 21]</li>
                             <li><strong>Visualization:</strong> Developed dynamic visualizations with interactive filters to support
-                                data-driven decision-making for utility providers.</li>
+                                data-driven decision-making for utility providers. [cite: 22]</li>
                             <li><strong>Business Impact:</strong> Provided actionable insights to improve load management and optimize
-                                energy supply strategies, contributing to operational efficiency.</li>
+                                energy supply strategies, contributing to operational efficiency. [cite: 23]</li>
                         </ul>
                     </div>
                     <div class="project-card">
@@ -278,13 +332,13 @@
                                 rel="noopener noreferrer">View on GitHub</a></p>
                         <ul class="list-disc list-outside ml-5 space-y-1 text-sm text-stone-600 leading-relaxed">
                             <li><strong>Data Cleaning & Validation:</strong> Cleaned and preprocessed Users, Products, and
-                                Transactions datasets using Python (Pandas), resolving duplicates and missing values.</li>
+                                Transactions datasets using Python (Pandas), resolving duplicates and missing values. [cite: 15]</li>
                             <li><strong>Exploratory Data Analysis (EDA):</strong> Conducted EDA to uncover trends in sales, user
-                                demographics, and product categories, providing actionable insights for targeted marketing.</li>
+                                demographics, and product categories, providing actionable insights for targeted marketing. [cite: 16, 17]</li>
                             <li><strong>SQL Querying:</strong> Developed optimized SQL queries to analyze sales by generation and
-                                year-over-year growth, supporting key business decisions.</li>
+                                year-over-year growth, supporting key business decisions. [cite: 17]</li>
                             <li><strong>Data Visualization:</strong> Created visualizations using Matplotlib and Seaborn, delivering
-                                insights into sales trends and store performance for stakeholders.</li>
+                                insights into sales trends and store performance for stakeholders. [cite: 18, 19]</li>
                         </ul>
                     </div>
                 </div>
